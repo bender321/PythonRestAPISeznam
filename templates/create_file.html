@@ -1,0 +1,14 @@
+<center>
+    {% block title %}
+        <h1>Create file</h1>
+    {% endblock %}
+    {% block content %}
+        <p><h3>Which file would you like to create?</h3></p>
+        <form action="#" method="post">
+            <p><input type="text" name="file"/></p>
+            <p><input type="submit" name="create" value="Create"/></p>
+            <p><input type="submit" name="return" value="Return"/></p>
+        </form>
+        <p><h2>{{content}}</h2></p>
+    {% endblock %}
+</center>

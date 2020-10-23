@@ -1,0 +1,16 @@
+<center>
+    {% block title %}
+        <h1>Directory list</h1>
+    {% endblock %}
+    {% block content %}
+        {% for k,v in content.items() %}
+            <p><b>{{k}}</b></p>
+            {% for item in v %}
+                <p>{{item}}</p>
+            {%  endfor %}
+        {%  endfor %}
+        <form action="#" method="post">
+            <p><input type="submit" name="return" value="Return"/></p>
+        </form>
+    {% endblock %}
+</center>

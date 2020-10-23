@@ -1,0 +1,16 @@
+<center>
+    {% block title %}
+        <h1>Get info of file</h1>
+    { % endblock %}
+    {% block content %}
+        <form action="#" method="post">
+            <p>{{msg}}</p>
+            <p><input type="text" name="file"/></p>
+            <p><input type="submit" name="show_me" value="Show me"/></p>
+            <p><input type="submit" name="return0" value="Return"/></p>
+        </form>
+        {% for item in content %}
+            <p>{{item}}</p>
+        {% endfor %}
+    {% endblock %}
+</center>

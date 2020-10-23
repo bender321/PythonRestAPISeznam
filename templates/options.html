@@ -1,0 +1,18 @@
+<center>
+    {% block title %}
+        <h1>Options page</h1>
+    {% endblock %}
+    {% block content %}
+        <p>Current path is:</p>
+        <p><b>{{root}}</b></p>
+        <form action="#" method="post">
+            <p>Choose your options what you wish to do next: </p>
+            <p><input type="submit" name="button_0" value="Move to subdirectory"/></p>
+            <p><input type="submit" name="button_1" value="List all stuff here"/></p>
+        <p><input type="submit" name="button_2" value="Get info of file"/></p>
+        <p><input type="submit" name="button_3" value="Delete folder or file"/></p>
+        <p><input type="submit" name="button_4" value="Create new file"/></p>
+        <p><input type="submit" name="button_5" value="Return back to set working directory"/></p>
+    </form>
+    {% endblock %}
+</center>

@@ -1,0 +1,14 @@
+<center>
+    {% block title %}
+        <h1>Move to the subdirectory</h1>
+    {% endblock %}
+    {% block content %}
+        <form action="#" method="post">
+            <p>Which subfolder would like to move to?</p>
+            <p><input type="text" name="subfolder"/></p>
+            <p><input type="submit" name="move" value="Move to subfolder"/></p>
+            <p><input type="submit" name="return" value="Return"/></p>
+        </form>
+        <p><h2>{{msg}}</h2></p>
+    {% endblock %}
+</center>
